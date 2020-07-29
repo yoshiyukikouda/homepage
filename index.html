@@ -11,6 +11,7 @@
 		<title>Life with Music And Artistry</title>
 	</head>
 	<body>
+		<!-- nav menu -->
 		<header class="site-header flex flex--bet">
 			<nav class="gnav">
 				<ul class="gnav__menu flex flex--bet">
@@ -35,9 +36,13 @@
 					<li class="gnav__menu__item">
 						<a class="gnav__menu__item__link" href="#contact">Contact</a>
 					</li>
+					<li class="gnav__menu__item">
+						<a class="gnav__menu__item__link" href="#news">News</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
+		<!-- title -->
 		<header class="header">
 			<p class="title-sub">My Portfolio</p>
 			<h1 class="title"><a href="index.html">Life with Music And Artistry</a></h1>
@@ -47,6 +52,7 @@
 				<a class="button button-showy" href="#contact">Contact</a>
 			</div>
 		</header>
+		<!-- about -->
 		<section id="about" class="about">
 			<!-- FC2カウンター ここから -->
 			<script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=8332905"></script>
@@ -109,6 +115,7 @@
 				</div>
 			</div>
 		</section>
+		<!-- music -->
 		<section id="music" class="music">
 			<h2 class="heading">Music</h2 class="heading">
 			<div class="music-wrapper fadein">
@@ -154,6 +161,7 @@
 				</div>
 			</div>
 		</section>
+		<!-- art -->
 		<section id="art" class="art">
 			<h2 class="heading">Art</h2 class="heading">
 			<div class="art-wrapper fadein">
@@ -196,6 +204,7 @@
 				</div>
 			</div>
 		</section>
+		<!-- coding -->
 		<section id="coding" class="coding">
 			<h2 class="heading">Coding</h2 class="heading">
 			<div class="coding-wrapper fadein">
@@ -205,6 +214,7 @@
 				</div>
 			</div>
 		</section>
+		<!-- skill -->
 		<section id="skill" class="skill">
 			<h2 class="heading">Skill</h2 class="heading">
 			<div class="skill-wrapper fadein">
@@ -239,6 +249,7 @@
 				</div>
 			</div>
 		</section>
+		<!-- contact -->
 		<section id="contact" class="contact">
 			<h2 class="heading">Contact（工事中）</h2 class="heading">
 				<div class="skill-wrapper fadein">
@@ -251,48 +262,28 @@
 				</div>
 			</div>
 		</section>
+		<!-- news -->
+		<section id="news" class="about">
+			<!-- FC2カウンター ここまで -->
+			<h2 class="heading">News</h2>
+			<div class="about-wrapper">
+				<div class="about-box">
+					<p class="about-text">
+						2020/07/28&nbsp;&nbsp;ホームページをリニューアルしました。<br/>
+					</p>
+				</div>
+				<div class="buttons">
+					<a class="button" href="#">
+						Read more
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- footer -->
 		<footer class="footer">
 			<div id ="copyright">Copyright &copy; 2016-2020 Yoshi All Rights Reserved.</div>
 		</footer>
 		<p id="page-top"><a href="#wrap">PAGE TOP</a></p>
-		<script type="text/javascript">
-			$(function() {
-				var pageTop = $('#page-top');	
-				pageTop.hide();
-				$(window).scroll(function () {
-					if ($(this).scrollTop() > 100) {
-						pageTop.fadeIn();
-					} else {
-						pageTop.fadeOut();
-					}
-				});
-				pageTop.click(function () {
-					$('body,html').animate({
-						scrollTop: 0
-					}, 500);
-					return false;
-				});
-				$(window).on('scroll',function(){
-					$('.fadein').each(function(){
-						var position = $(this).offset().top;
-						var scroll = $(window).scrollTop();
-						var windowHeight = $(window).height();
-						if (scroll > position - windowHeight + 200){
-						$(this).addClass('active');
-						}
-					});
-				});
-				var startPos = 0, winScrollTop = 0;
-				$(window).on('scroll', function(){
-					winScrollTop = $(this).scrollTop();
-					if (winScrollTop >= startPos) {
-						$('.site-header').addClass('hide');
-					} else {
-						$('.site-header').removeClass('hide');
-					}
-					startPos = winScrollTop;
-				});
-			});
-		</script>
+		<script src="script/index.js" type="text/javascript"></script>
 	</body>
 </html>
