@@ -1,12 +1,12 @@
 $(function() {
 	setTimeout(function(){
 		$('.top-title-group').fadeIn(1600);
-	},500);
+	}, 500);
 	setTimeout(function(){
         var windowWidth = window.innerWidth;
         $('.nav-wrapper').fadeIn(300);
         $('.top .buttons, .scroll-down, section, footer').fadeIn(300);
-    },2500);
+    }, 2500);
 }).on('click', "#page-top", function() {
     $('body, html').animate({
         scrollTop: 0

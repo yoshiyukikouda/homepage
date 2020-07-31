@@ -35,7 +35,7 @@ footer {
     font-size: 2.2rem;
 }
 .about-text,
-.news-box {
+.news-text {
     margin: 30px auto;
     line-height: 2.5;
     text-align: left;
@@ -295,13 +295,15 @@ footer {
 } 
 
 @media (max-width: 1024px) {
-    .about-box {
+    .about-box,
+    .news-box {
         width: 100%;
     }    
 }
 
 @media (max-width: 768px) {
-    .about-text {
+    .about-text,
+    .news-text {
         line-height: 1.8;
     }
     .music-wrapper, 
